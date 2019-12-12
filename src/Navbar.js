@@ -50,41 +50,43 @@ class Navbar extends Component {
   }
 
   render() {
-    const { level, changeLevel } = this.props;
+    const { level, changeLevel, showingAllColors, showingLevels } = this.props;
     const { format } = this.state;
     return (
       <header className="Navbar">
         <div className="logo">
           <Link to="/">reactcolorpicker</Link>
         </div>
-        <span>Level: {level}</span>
-        <div className="slider-container" style={wrapperStyle}>
-          <div className="slider">
-            <Slider
-              defaultValue={level}
-              handle={handle}
-              min={100}
-              max={900}
-              step={100}
-              onAfterChange={changeLevel}
-              trackStyle={{ backgroundColor: 'transparent', height: 5 }}
-              handleStyle={{
-                backgroundColor: '#130e3a',
-                height: 17,
-                width: 17,
-                outline: 'none',
-                border: '2px solid #130e3',
-                boxShadow: 'none'
-              }}
-              railStyle={{
-                backgroundColor: '#d6d8db',
-                height: 7,
-                width: 340,
-                display: 'inline-block'
-              }}
-            />
+        {showingLevels && <span>Level: {level}</span>}
+        {showingAllColors && (
+          <div className="slider-container" style={wrapperStyle}>
+            <div className="slider">
+              <Slider
+                defaultValue={level}
+                handle={handle}
+                min={100}
+                max={900}
+                step={100}
+                onAfterChange={changeLevel}
+                trackStyle={{ backgroundColor: 'transparent', height: 5 }}
+                handleStyle={{
+                  backgroundColor: '#130e3a',
+                  height: 17,
+                  width: 17,
+                  outline: 'none',
+                  border: '2px solid #130e3',
+                  boxShadow: 'none'
+                }}
+                railStyle={{
+                  backgroundColor: '#d6d8db',
+                  height: 7,
+                  width: 340,
+                  display: 'inline-block'
+                }}
+              />
+            </div>
           </div>
-        </div>
+        )}
         <div className="select-container">
           <Select value={format} onChange={this.handleFormatChange}>
             <MenuItem value="hex">HEX - #ffffff</MenuItem>
