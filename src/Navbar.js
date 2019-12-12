@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { withStyles } from '@material-ui/core/styles';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Snackbar from '@material-ui/core/Snackbar';
@@ -9,10 +10,8 @@ import IconButton from '@material-ui/core/IconButton';
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
 import Tooltip from 'rc-tooltip';
-import './Navbar.css';
+import styles from './styles/NavbarStyles';
 
-// const createSliderWithTooltip = Slider.createSliderWithTooltip;
-// const Range = createSliderWithTooltip(Slider.Range);
 const Handle = Slider.Handle;
 
 const handle = props => {
@@ -50,17 +49,23 @@ class Navbar extends Component {
   }
 
   render() {
-    const { level, changeLevel, showingAllColors, showingLevels } = this.props;
+    const {
+      level,
+      changeLevel,
+      showingAllColors,
+      showingLevels,
+      classes
+    } = this.props;
     const { format } = this.state;
     return (
-      <header className="Navbar">
-        <div className="logo">
+      <header className={classes.Navbar}>
+        <div className={classes.logo}>
           <Link to="/">reactcolorpicker</Link>
         </div>
         {showingLevels && <span>Level: {level}</span>}
         {showingAllColors && (
-          <div className="slider-container" style={wrapperStyle}>
-            <div className="slider">
+          <div style={wrapperStyle}>
+            <div>
               <Slider
                 defaultValue={level}
                 handle={handle}
@@ -87,7 +92,7 @@ class Navbar extends Component {
             </div>
           </div>
         )}
-        <div className="select-container">
+        <div className={classes.selectContainer}>
           <Select value={format} onChange={this.handleFormatChange}>
             <MenuItem value="hex">HEX - #ffffff</MenuItem>
             <MenuItem value="rgb">RGB - rgb(255,255,255)</MenuItem>
@@ -119,4 +124,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default withStyles(styles)(Navbar);
