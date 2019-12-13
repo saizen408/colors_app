@@ -4,10 +4,11 @@ export default {
     height: '100vh',
     display: 'flex',
     alignItems: 'flex-start',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    overflow: 'scroll'
   },
   container: {
-    width: '50%',
+    width: '75',
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
