@@ -44,7 +44,12 @@ class ColorBox extends Component {
           <div className={classes.boxContent}>
             <span className={classes.colorName}>{name}</span>
           </div>
-          <button className={classes.copyButton}>Copy</button>
+          <button
+            className={classes.copyButton}
+            style={{ transition: 'all 0.3s ease-in-out' }}
+          >
+            Copy
+          </button>
 
           {showingFullPalette && (
             <Link to={moreUrl} onClick={e => e.stopPropagation()}>
