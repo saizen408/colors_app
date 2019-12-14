@@ -23,6 +23,10 @@ class PaletteFormNav extends Component {
         ({ paletteName }) => paletteName.toLowerCase() !== value.toLowerCase()
       )
     );
+    ValidatorForm.addValidationRule(
+      'blockedPaletteName',
+      value => 'new' !== value.toLowerCase()
+    );
   }
 
   handleChange(evt) {
