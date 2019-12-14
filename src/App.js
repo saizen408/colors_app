@@ -26,6 +26,8 @@ class App extends Component {
   render() {
     return (
       <Switch>
+        {/* Todo: Add edit route */}
+
         <Route
           exact
           path="/palette/new"
