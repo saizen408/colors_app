@@ -6,7 +6,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Snackbar from '@material-ui/core/Snackbar';
 import CloseIcon from '@material-ui/icons/Close';
 import IconButton from '@material-ui/core/IconButton';
-
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
 import Tooltip from 'rc-tooltip';
@@ -29,7 +28,10 @@ const handle = props => {
   );
 };
 
-const wrapperStyle = { width: 340, margin: 7 };
+const wrapperStyle = {
+  width: 340,
+  margin: 7
+};
 
 class Navbar extends Component {
   constructor(props) {
@@ -73,20 +75,13 @@ class Navbar extends Component {
                 max={900}
                 step={100}
                 onAfterChange={changeLevel}
-                trackStyle={{ backgroundColor: 'transparent', height: 5 }}
                 handleStyle={{
                   backgroundColor: '#130e3a',
-                  height: 17,
-                  width: 17,
                   outline: 'none',
-                  border: '2px solid #130e3',
-                  boxShadow: 'none'
+                  border: '2px solid #130e3'
                 }}
                 railStyle={{
-                  backgroundColor: '#d6d8db',
-                  height: 7,
-                  width: 340,
-                  display: 'inline-block'
+                  backgroundColor: '#d6d8db'
                 }}
               />
             </div>
