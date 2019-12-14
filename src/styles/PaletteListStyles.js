@@ -8,7 +8,7 @@ export default {
     overflow: 'scroll'
   },
   container: {
-    width: '75',
+    width: '55%',
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
