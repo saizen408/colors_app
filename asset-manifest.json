@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/colors_App/static/css/main.4dc90410.chunk.css",
+    "main.js": "/colors_App/static/js/main.6786da9b.chunk.js",
+    "main.js.map": "/colors_App/static/js/main.6786da9b.chunk.js.map",
+    "runtime-main.js": "/colors_App/static/js/runtime-main.478ac93d.js",
+    "runtime-main.js.map": "/colors_App/static/js/runtime-main.478ac93d.js.map",
+    "static/css/2.30d4ff4e.chunk.css": "/colors_App/static/css/2.30d4ff4e.chunk.css",
+    "static/js/2.60574300.chunk.js": "/colors_App/static/js/2.60574300.chunk.js",
+    "static/js/2.60574300.chunk.js.map": "/colors_App/static/js/2.60574300.chunk.js.map",
+    "index.html": "/colors_App/index.html",
+    "precache-manifest.147c807ac90f9f85b158e6f4b8ea4a97.js": "/colors_App/precache-manifest.147c807ac90f9f85b158e6f4b8ea4a97.js",
+    "service-worker.js": "/colors_App/service-worker.js",
+    "static/css/2.30d4ff4e.chunk.css.map": "/colors_App/static/css/2.30d4ff4e.chunk.css.map",
+    "static/css/main.4dc90410.chunk.css.map": "/colors_App/static/css/main.4dc90410.chunk.css.map",
+    "static/js/2.60574300.chunk.js.LICENSE": "/colors_App/static/js/2.60574300.chunk.js.LICENSE",
+    "static/media/bg.svg": "/colors_App/static/media/bg.83fc06a1.svg",
+    "static/media/bg2.svg": "/colors_App/static/media/bg2.5b81fc60.svg",
+    "static/media/bg3.svg": "/colors_App/static/media/bg3.c7607c2e.svg",
+    "static/media/bg4.svg": "/colors_App/static/media/bg4.802beda6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.478ac93d.js",
+    "static/css/2.30d4ff4e.chunk.css",
+    "static/js/2.60574300.chunk.js",
+    "static/css/main.4dc90410.chunk.css",
+    "static/js/main.6786da9b.chunk.js"
+  ]
+}
