@@ -64,6 +64,7 @@ export default {
     fontSize: '4rem',
     transform: 'scale(0.1)',
     opacity: ' 0',
+    zIndex: '-5',
     color: 'white',
     '& h1': {
       fontWeight: '400px',

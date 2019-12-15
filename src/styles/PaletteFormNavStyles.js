@@ -11,7 +11,7 @@ const styles = theme => ({
     display: 'none'
   },
   appBar: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#e4e8e9',
     backgroundImage: `url(${bg3})`,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -20,7 +20,10 @@ const styles = theme => ({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: '64px'
+    height: '64px',
+    '& h6': {
+      fontWeight: 700
+    }
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,

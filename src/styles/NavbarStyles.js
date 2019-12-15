@@ -1,17 +1,23 @@
 import sizes from './sizes';
+import bg3 from './bg3.svg';
+import bg4 from './bg4.svg';
 
 export default {
   Navbar: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    height: '6vh'
+    height: '6vh',
+    backgroundColor: '#e4e8e9',
+    backgroundImage: `url(${bg3})`
   },
   logo: {
     marginRight: '15px',
     padding: '0 13px',
-    backgroundColor: '#eceff1',
+    backgroundColor: '#e4e8e9',
+    backgroundImage: `url(${bg4})`,
     fontFamily: 'Roboto',
+    fontWeight: 500,
     height: '100%',
     display: 'flex',
     alignItems: 'center',

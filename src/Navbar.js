@@ -62,7 +62,7 @@ class Navbar extends Component {
     return (
       <header className={classes.Navbar}>
         <div className={classes.logo}>
-          <Link to="/">reactcolorpicker</Link>
+          <Link to="/">reactColorPicker</Link>
         </div>
         {showingLevels && <span>Level: {level}</span>}
         {showingAllColors && (

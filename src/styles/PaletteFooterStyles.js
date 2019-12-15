@@ -1,6 +1,9 @@
+import bg3 from './bg3.svg';
+
 export default {
   PaletteFooter: {
-    backgroundColor: 'white',
+    backgroundColor: '#ffffff',
+    backgroundImage: `url(${bg3})`,
     height: '5vh',
     display: 'flex',
     justifyContent: 'flex-end',

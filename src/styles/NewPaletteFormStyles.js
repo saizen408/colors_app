@@ -52,7 +52,10 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    '& h4': {
+      fontWeight: 500
+    }
   },
   buttons: {
     width: '100%'
