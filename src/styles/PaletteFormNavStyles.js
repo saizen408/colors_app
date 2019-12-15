@@ -1,5 +1,6 @@
 import { DRAWER_WIDTH } from '../constants';
 import sizes from './sizes';
+import bg3 from './bg3.svg';
 
 const drawerWidth = DRAWER_WIDTH;
 const styles = theme => ({
@@ -10,6 +11,8 @@ const styles = theme => ({
     display: 'none'
   },
   appBar: {
+    backgroundColor: '#ffffff',
+    backgroundImage: `url(${bg3})`,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen

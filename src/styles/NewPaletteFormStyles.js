@@ -1,4 +1,5 @@
 import { DRAWER_WIDTH } from '../constants';
+import bg3 from './bg3.svg';
 
 const drawerWidth = DRAWER_WIDTH;
 const styles = theme => ({
@@ -15,7 +16,10 @@ const styles = theme => ({
   drawerPaper: {
     width: drawerWidth,
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    /* background by SVGBackgrounds.com */
+    backgroundColor: '#ffffff',
+    backgroundImage: `url(${bg3})`
   },
   drawerHeader: {
     display: 'flex',
@@ -54,7 +58,8 @@ const styles = theme => ({
     width: '100%'
   },
   button: {
-    width: '50%'
+    width: '45%',
+    margin: '5px'
   }
 });
 
