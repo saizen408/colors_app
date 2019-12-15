@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Palette from './Palette';
 import PaletteList from './PaletteList';
 import SingleColorPalette from './SingleColorPalette';
+import Page from './Page';
 import seedColors from './seedColors';
 import NewPaletteForm from './NewPaletteForm';
 import { generatePalette } from './colorHelpers';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import Page from './Page';
 
 class App extends Component {
   constructor(props) {
@@ -54,8 +54,6 @@ class App extends Component {
           <TransitionGroup>
             <CSSTransition key={location.key} classNames="page" timeout={500}>
               <Switch location={location}>
-                {/* Todo: Add edit route */}
-
                 <Route
                   exact
                   path="/palette/new"
